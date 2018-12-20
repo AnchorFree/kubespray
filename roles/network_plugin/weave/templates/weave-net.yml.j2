@@ -165,6 +165,8 @@ items:
 {% endif %}
                 - name: WEAVE_MTU
                   value: "{{ weave_mtu | int }}"
+                - name: WEAVE_NO_FASTDP
+                  value: "{{ weave_no_fastdp }}"
                 - name: NO_MASQ_LOCAL
                   value: "{{ weave_no_masq_local | bool | int }}"
 {% if weave_extra_args %}

@@ -53,6 +53,11 @@ weave_mtu: 1376
 # only with Weave IPAM (default).
 weave_no_masq_local: true
 
+# If set to "true" - disables fast datapath feature.
+# This may help in case you experience high packet loss with encryption enabled
+# https://github.com/weaveworks/weave/blob/master/site/concepts/fastdp-how-it-works.md
+weave_no_fastdp: false
+
 # Extra variables that passing to launch.sh, useful for enabling seed mode, see
 # https://www.weave.works/docs/net/latest/tasks/ipam/ipam/
 weave_extra_args: ~
